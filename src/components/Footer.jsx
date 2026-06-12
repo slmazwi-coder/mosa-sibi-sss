@@ -1,16 +1,10 @@
 import { Link } from 'react-router-dom'
-import { Phone, Mail, MapPin, Clock, Facebook } from 'lucide-react'
+import { Phone, Mail, MapPin, Facebook } from 'lucide-react'
 import { SCHOOL } from '../lib/store'
-
-const TikTok = ({ size = 18 }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.372V2h-3.58v13.2a2.988 2.988 0 1 1-4.337-2.657V8.69a6.57 6.57 0 1 0 4.337 6.51V9.207a8.318 8.318 0 0 0 3.77.92V6.686Z" />
-  </svg>
-)
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#0D3B14', borderTop: '4px solid #DAA520' }}>
+    <footer style={{ background: '#071A45', borderTop: '4px solid #F5C400' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
@@ -23,11 +17,11 @@ export default function Footer() {
                 className="w-14 h-14 rounded-lg object-contain shrink-0"
               />
               <div>
-                <p className="font-display text-xl font-bold leading-tight" style={{ color: '#DAA520' }}>
+                <p className="font-display text-xl font-bold leading-tight" style={{ color: '#ffffff' }}>
                   Mosa Sibi SSS
                 </p>
-                <p className="text-xs italic leading-tight mt-0.5" style={{ color: 'rgba(218,165,32,0.55)' }}>
-                  {SCHOOL.motto}
+                <p className="text-xs italic leading-tight mt-0.5" style={{ color: '#F5C400' }}>
+                  {SCHOOL.motto} · {SCHOOL.tagline}
                 </p>
               </div>
             </div>
@@ -37,46 +31,34 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 className="w-9 h-9 rounded-lg flex items-center justify-center transition-colors"
-                style={{ background: 'rgba(218,165,32,0.12)', color: '#DAA520' }}
-                onMouseEnter={e => { e.currentTarget.style.background = '#DAA520'; e.currentTarget.style.color = '#1B5E20' }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(218,165,32,0.12)'; e.currentTarget.style.color = '#DAA520' }}
+                style={{ background: 'rgba(255,255,255,0.1)', color: '#F5C400' }}
+                onMouseEnter={e => { e.currentTarget.style.background = '#F5C400'; e.currentTarget.style.color = '#071A45' }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.color = '#F5C400' }}
                 aria-label="Facebook"
               >
                 <Facebook size={18} />
-              </a>
-              <a
-                href={SCHOOL.tiktok}
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-lg flex items-center justify-center transition-colors"
-                style={{ background: 'rgba(218,165,32,0.12)', color: '#DAA520' }}
-                onMouseEnter={e => { e.currentTarget.style.background = '#DAA520'; e.currentTarget.style.color = '#1B5E20' }}
-                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(218,165,32,0.12)'; e.currentTarget.style.color = '#DAA520' }}
-                aria-label="TikTok"
-              >
-                <TikTok />
               </a>
             </div>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#DAA520', borderBottom: '1px solid rgba(218,165,32,0.2)', paddingBottom: '0.5rem' }}>
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#4DA6E8', borderBottom: '1px solid rgba(77,166,232,0.2)', paddingBottom: '0.5rem' }}>
               Quick Links
             </h4>
-            <ul className="space-y-2 text-sm" style={{ color: 'rgba(218,165,32,0.7)' }}>
+            <ul className="space-y-2 text-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
               {[
-                ['About Us',      '/about'],
-                ['Achievements',  '/achievements'],
-                ['Staff',         '/staff'],
-                ['Admissions',    '/admissions'],
-                ['Documents',     '/documents'],
-                ['Contact',       '/contact'],
+                ['About',      '/about'],
+                ['Academics',  '/academics'],
+                ['Facilities', '/facilities'],
+                ['Admissions', '/admissions'],
+                ['News',       '/news'],
+                ['Contact',    '/contact'],
               ].map(([label, to]) => (
                 <li key={to}>
                   <Link to={to} className="hover:text-amber-300 transition-colors"
-                    style={{ color: 'rgba(218,165,32,0.7)' }}
-                    onMouseEnter={e => { e.currentTarget.style.color = '#FFD966' }}
-                    onMouseLeave={e => { e.currentTarget.style.color = 'rgba(218,165,32,0.7)' }}
+                    style={{ color: 'rgba(255,255,255,0.65)' }}
+                    onMouseEnter={e => { e.currentTarget.style.color = '#F5C400' }}
+                    onMouseLeave={e => { e.currentTarget.style.color = 'rgba(255,255,255,0.65)' }}
                   >
                     {label}
                   </Link>
@@ -86,43 +68,42 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#DAA520', borderBottom: '1px solid rgba(218,165,32,0.2)', paddingBottom: '0.5rem' }}>
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#4DA6E8', borderBottom: '1px solid rgba(77,166,232,0.2)', paddingBottom: '0.5rem' }}>
               Contact
             </h4>
-            <ul className="space-y-3 text-sm" style={{ color: 'rgba(218,165,32,0.7)' }}>
+            <ul className="space-y-3 text-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
               <li className="flex items-start gap-2">
                 <MapPin size={15} className="mt-0.5 shrink-0" />
-                <span>{SCHOOL.address}</span>
+                <span>Maluti, Eastern Cape, 4740</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={15} className="shrink-0" />
-                <span>{SCHOOL.phone}</span>
+                <span>Contact school office</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={15} className="shrink-0" />
-                <span className="break-all">{SCHOOL.email}</span>
+                <span className="break-all">P.O. Box 25, Maluti, 4740</span>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#DAA520', borderBottom: '1px solid rgba(218,165,32,0.2)', paddingBottom: '0.5rem' }}>
-              School Hours
+            <h4 className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: '#4DA6E8', borderBottom: '1px solid rgba(77,166,232,0.2)', paddingBottom: '0.5rem' }}>
+              School Info
             </h4>
-            <ul className="space-y-2 text-sm" style={{ color: 'rgba(218,165,32,0.7)' }}>
-              <li className="flex justify-between gap-4"><span>Mon – Thu</span><span className="font-medium">{SCHOOL.hoursWeek}</span></li>
-              <li className="flex justify-between gap-4"><span>Friday</span><span className="font-medium">{SCHOOL.hoursFri}</span></li>
-              <li className="flex justify-between gap-4"><span>Sat – Sun</span><span className="font-medium">Closed</span></li>
+            <ul className="space-y-2 text-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
+              <li>Grades 8 – 12</li>
+              <li>No-Fee Public School</li>
+              <li>Alfred Nzo West District</li>
+              <li style={{ marginTop: '0.8rem', color: '#4DA6E8', fontWeight: 700 }}>Matric Class of 2026 🎗️</li>
             </ul>
           </div>
 
         </div>
 
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style={{ borderTop: '1px solid rgba(218,165,32,0.12)', color: 'rgba(218,165,32,0.4)' }}>
-          <p>&copy; {new Date().getFullYear()} Mosa Sibi Senior Secondary School. All rights reserved.</p>
-          <Link to="/admin/login" style={{ color: 'rgba(218,165,32,0.25)' }} className="hover:opacity-60 transition-opacity">
-            Staff Portal
-          </Link>
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style={{ borderTop: '1px solid rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.4)' }}>
+          <p>&copy; {new Date().getFullYear()} Mosa Sibi Senior Secondary School. All Rights Reserved.</p>
+          <p>Alfred Nzo West Education District, Eastern Cape</p>
         </div>
 
       </div>

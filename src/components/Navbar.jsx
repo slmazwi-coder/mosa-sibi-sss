@@ -6,11 +6,9 @@ import { SCHOOL } from '../lib/store'
 const NAV_LINKS = [
   { label: 'Home',         to: '/' },
   { label: 'About',        to: '/about' },
-  { label: 'Achievements', to: '/achievements' },
-  { label: 'Sport & Arts', to: '/activities' },
-  { label: 'Documents',    to: '/documents' },
-  { label: 'Staff',        to: '/staff' },
+  { label: 'Academics',    to: '/academics' },
   { label: 'Admissions',   to: '/admissions' },
+  { label: 'News',         to: '/news' },
   { label: 'Contact',      to: '/contact' },
 ]
 
@@ -31,9 +29,9 @@ export default function Navbar() {
     <header
       className="sticky top-0 z-50 transition-shadow duration-300"
       style={{
-        background: '#1B5E20',
-        borderBottom: '3px solid #DAA520',
-        boxShadow: scrolled ? '0 4px 24px rgba(27,94,32,0.25)' : 'none',
+        background: '#071A45',
+        borderBottom: '3px solid #F5C400',
+        boxShadow: scrolled ? '0 4px 24px rgba(7,26,69,0.35)' : 'none',
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,10 +44,10 @@ export default function Navbar() {
               className="w-16 h-16 rounded-lg shrink-0 object-contain"
             />
             <div className="min-w-0">
-              <p className="font-display text-base font-bold leading-tight truncate" style={{ color: '#DAA520' }}>
+              <p className="font-display text-base font-bold leading-tight truncate" style={{ color: '#ffffff' }}>
                 {SCHOOL.short}
               </p>
-              <p className="text-xs leading-tight mt-0.5" style={{ color: 'rgba(218,165,32,0.65)' }}>
+              <p className="text-xs leading-tight mt-0.5" style={{ color: '#F5C400' }}>
                 {SCHOOL.motto}
               </p>
             </div>
@@ -63,11 +61,11 @@ export default function Navbar() {
                 className="px-3 py-1.5 rounded-md text-sm font-medium transition-colors duration-150"
                 style={
                   pathname === to
-                    ? { background: '#DAA520', color: '#1B5E20', fontWeight: 700 }
-                    : { color: 'rgba(218,165,32,0.85)' }
+                    ? { background: '#F5C400', color: '#071A45', fontWeight: 700 }
+                    : { color: 'rgba(255,255,255,0.8)' }
                 }
                 onMouseEnter={e => {
-                  if (pathname !== to) e.currentTarget.style.background = 'rgba(218,165,32,0.12)'
+                  if (pathname !== to) e.currentTarget.style.background = 'rgba(255,255,255,0.07)'
                 }}
                 onMouseLeave={e => {
                   if (pathname !== to) e.currentTarget.style.background = ''
@@ -82,15 +80,15 @@ export default function Navbar() {
             <Link
               to="/student/login"
               className="hidden sm:inline-flex text-xs font-semibold px-3 py-1.5 rounded-lg border transition-colors"
-              style={{ borderColor: '#DAA520', color: '#DAA520' }}
-              onMouseEnter={e => { e.currentTarget.style.background = '#DAA520'; e.currentTarget.style.color = '#1B5E20' }}
-              onMouseLeave={e => { e.currentTarget.style.background = ''; e.currentTarget.style.color = '#DAA520' }}
+              style={{ borderColor: '#F5C400', color: '#F5C400', borderRadius: '20px' }}
+              onMouseEnter={e => { e.currentTarget.style.background = '#F5C400'; e.currentTarget.style.color = '#071A45' }}
+              onMouseLeave={e => { e.currentTarget.style.background = ''; e.currentTarget.style.color = '#F5C400' }}
             >
               Student Portal
             </Link>
             <button
               className="lg:hidden p-2 rounded-lg"
-              style={{ color: '#DAA520' }}
+              style={{ color: '#F5C400' }}
               onClick={() => setOpen(v => !v)}
               aria-label="Toggle menu"
             >
@@ -101,7 +99,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div style={{ background: '#0D3B14', borderTop: '1px solid rgba(218,165,32,0.2)' }}>
+        <div style={{ background: '#0F2F72', borderTop: '1px solid rgba(245,196,0,0.2)' }}>
           <div className="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-1">
             {NAV_LINKS.map(({ label, to }) => (
               <Link
@@ -110,8 +108,8 @@ export default function Navbar() {
                 className="px-4 py-2.5 rounded-lg text-sm font-medium"
                 style={
                   pathname === to
-                    ? { background: '#DAA520', color: '#1B5E20', fontWeight: 700 }
-                    : { color: 'rgba(218,165,32,0.85)' }
+                    ? { background: '#F5C400', color: '#071A45', fontWeight: 700 }
+                    : { color: 'rgba(255,255,255,0.8)' }
                 }
               >
                 {label}
@@ -120,7 +118,7 @@ export default function Navbar() {
             <Link
               to="/student/login"
               className="px-4 py-2.5 rounded-lg text-sm font-medium mt-1"
-              style={{ color: '#DAA520', borderTop: '1px solid rgba(218,165,32,0.15)', paddingTop: '0.75rem' }}
+              style={{ color: '#F5C400', borderTop: '1px solid rgba(245,196,0,0.15)', paddingTop: '0.75rem' }}
             >
               Student Portal
             </Link>
