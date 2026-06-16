@@ -16,7 +16,7 @@ export default function About() {
         {/* Campus image */}
         <div className="mb-12 rounded-2xl overflow-hidden" style={{ maxHeight: '400px' }}>
           <img
-            src="/assets/campus.jpg"
+            src="/assets/FB_IMG_1780831405180.jpg"
             alt="Mosa Sibi SSS Campus"
             className="w-full h-full object-cover"
           />

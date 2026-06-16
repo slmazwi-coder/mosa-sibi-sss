@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-3">
               <img
-                src="/assets/logo.png"
+                src="/assets/Mosasibilogo.png"
                 alt="Mosa Sibi SSS Logo"
                 className="w-14 h-14 rounded-lg object-contain shrink-0"
               />

@@ -33,7 +33,7 @@ export default function Hero() {
 
       <div className="absolute inset-0">
         <img
-          src="/assets/matric-class.jpg"
+          src="/assets/FB_IMG_1780831401512.jpg"
           alt="Mosa Sibi SSS Campus"
           className="w-full h-full object-cover"
         />

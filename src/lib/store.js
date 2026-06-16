@@ -43,7 +43,7 @@ const DEFAULT_NEWS = [
     date: '2026',
     excerpt: 'The annual Tie Ceremony marked the formal start of the Grade 12 journey for the Class of 2026. Learners received their Matric 2026 ties in a vibrant celebration of commitment, pride, and purpose.',
     body: 'The Tie Ceremony is our beloved annual tradition where Grade 12 learners receive their Matric 2026 ties. It marks the formal beginning of their final year — a celebration of commitment and pride! First Things First.',
-    image: '/assets/ceremony.jpg',
+    image: '/assets/FB_IMG_1780831415056.jpg',
     category: 'Tradition',
   },
   {
@@ -61,7 +61,7 @@ const DEFAULT_NEWS = [
     date: 'May 2026',
     excerpt: 'Our school counsellor is available to assist Matric graduates with NSFAS applications, bursary searches, university registration, and career guidance. Thuto ke Lesedi — education is light.',
     body: 'Our school counsellor helps Grade 12 learners with NSFAS applications, bursaries, university registrations, and career guidance. Thuto ke Lesedi — education opens every door!',
-    image: '/assets/campus.jpg',
+    image: '/assets/FB_IMG_1780831409854.jpg',
     category: 'Opportunities',
   },
 ]
