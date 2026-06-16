@@ -39,7 +39,7 @@ export default function Navbar() {
 
           <Link to="/" className="flex items-center gap-3 group min-w-0">
             <img
-              src="/assets/Mosasibilogo.png"
+              src="/assets/Copilot_20260616_195155.png"
               alt="Mosa Sibi SSS Logo"
               className="w-16 h-16 rounded-lg shrink-0 object-contain"
             />
