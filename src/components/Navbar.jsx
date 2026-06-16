@@ -41,7 +41,7 @@ export default function Navbar() {
             <img
               src="/assets/Copilot_20260616_195845.png"
               alt="Mosa Sibi SSS Logo"
-              className="w-20 h-20 rounded-lg shrink-0 object-contain"
+              className="w-24 h-24 rounded-lg shrink-0 object-contain"
             />
             <div className="min-w-0">
               <p className="font-display text-base font-bold leading-tight truncate" style={{ color: '#ffffff' }}>
