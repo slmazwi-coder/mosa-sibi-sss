@@ -39,9 +39,9 @@ export default function Navbar() {
 
           <Link to="/" className="flex items-center gap-3 group min-w-0">
             <img
-              src="/assets/Copilot_20260616_195155.png"
+              src="/assets/Copilot_20260616_195845.png"
               alt="Mosa Sibi SSS Logo"
-              className="w-16 h-16 rounded-lg shrink-0 object-contain"
+              className="w-20 h-20 rounded-lg shrink-0 object-contain"
             />
             <div className="min-w-0">
               <p className="font-display text-base font-bold leading-tight truncate" style={{ color: '#ffffff' }}>

@@ -12,9 +12,9 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-3">
               <img
-                src="/assets/Copilot_20260616_195155.png"
+                src="/assets/Copilot_20260616_195845.png"
                 alt="Mosa Sibi SSS Logo"
-                className="w-14 h-14 rounded-lg object-contain shrink-0"
+                className="w-20 h-20 rounded-lg object-contain shrink-0"
               />
               <div>
                 <p className="font-display text-xl font-bold leading-tight" style={{ color: '#ffffff' }}>
